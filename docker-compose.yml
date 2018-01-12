@@ -2,7 +2,7 @@ version: '2'
 
 services:
   mdb:
-    image: mongo:3.4.3
+    image: mongo:3.6
     ports:
       - "27017"
     command: mongod --replSet=bigchain-rs
