@@ -1,6 +1,6 @@
 {
   "name": "bigchaindb-react-redux-boilerplate",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "bigchaindb-driver": "^3.2.0",
