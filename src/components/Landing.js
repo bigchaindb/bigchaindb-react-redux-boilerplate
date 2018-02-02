@@ -8,7 +8,7 @@ const Landing = () => (
         <div className="main">
             <h1>BigchainDB Boilerplate</h1>
             <h2>Secure. Decentralized. Open.</h2>
-            <p>
+            <div>
                 <ul>
                     <li><strong>Secure</strong>:
                         Every transaction in the system is cryptographically signed.</li>
@@ -16,7 +16,7 @@ const Landing = () => (
                         a scalable decentralized database.</li>
                     <li><strong>Open</strong>: Everybody can join the exchange.</li>
                 </ul>
-            </p>
+            </div>
 
             <Button primary as={Link} to="/wallet">
                 Connect to your digital wallet.
