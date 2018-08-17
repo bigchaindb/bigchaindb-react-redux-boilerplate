@@ -30,7 +30,6 @@ export const publish = (publicKey, privateKey, payload, metadata) => {
 
     // send it off to BigchainDB
     return conn.postTransaction(txSigned)
-        .then(() => conn.pollStatusAndFetchTransaction(txSigned.id))
         .then(() => txSigned);
 };
 
@@ -126,8 +125,6 @@ export const transfer = (tx, fromPublicKey, fromPrivateKey, toPublicKey, metadat
     const txTransferSigned = driver.Transaction.signTransaction(txTransfer, fromPrivateKey);
     // send it off to BigchainDB
     return conn.postTransaction(txTransferSigned)
-        .then(() =>
-            conn.pollStatusAndFetchTransaction(txTransferSigned.id))
         .then(() => txTransferSigned);
 };
 
